@@ -62,6 +62,10 @@ namespace Localization
 
         public string GetLocilizedText(int fileIndex, int textIndex)
         {
+            if (fileIndex < 0 || fileIndex >= LocalizationObjets.Count ||
+                textIndex < 0 || textIndex >= LocalizationObjets[fileIndex].LocalizationItems.Count)
+                return string.Empty;
+
             return LocalizationObjets[fileIndex].LocalizationItems[textIndex].Values[_currentLang];
         }
     }

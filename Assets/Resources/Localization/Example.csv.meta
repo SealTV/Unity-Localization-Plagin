@@ -1,5 +1,7 @@
 fileFormatVersion: 2
 guid: 91d824bb8465edc46aaae816546278ea
+labels:
+- Localization
 timeCreated: 1466358652
 licenseType: Free
 TextScriptImporter:

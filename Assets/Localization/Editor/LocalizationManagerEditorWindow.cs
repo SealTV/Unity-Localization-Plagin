@@ -164,6 +164,8 @@ namespace Localization.Editor
         private void AddNewFile()
         {
             string path = EditorUtility.SaveFilePanel("Save scene", "Assets/Resources/Localization", "Localization", "csv");
+            LocalizationObject localizationObject = new LocalizationObject(path);
+            File.WriteAllText(localizationObject.Name, localizationObject.ToString(), Encoding.Unicode);
         }
 
         private void Save()

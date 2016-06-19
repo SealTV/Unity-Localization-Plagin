@@ -11,9 +11,9 @@ namespace Localization.Data
         public readonly string Name;
         public readonly List<LocalizationItem> LocalizationItems;
 
-        private LocalizationObject()
+        public LocalizationObject(string name)
         {
-            Name = string.Empty;
+            Name = name;
             LocalizationItems = new List<LocalizationItem>();
         }
 
